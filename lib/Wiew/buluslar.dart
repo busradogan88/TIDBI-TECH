@@ -23,7 +23,7 @@ class Buluslar extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
               const SizedBox(height: 20),
-              // 1. Buton
+          
               TextButton(
                 onPressed: () {
                   Navigator.push(

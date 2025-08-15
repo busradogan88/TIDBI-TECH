@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Wiew/biliminsani.dart';
+import 'package:flutter_application_1/Wiew/giris.dart';
 
 void main(List<String> args) {
   runApp(const TDBTECH());
@@ -13,7 +13,7 @@ class TDBTECH extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: const Biliminsani(),
+      home: const Giris(),
     );
   }
 }

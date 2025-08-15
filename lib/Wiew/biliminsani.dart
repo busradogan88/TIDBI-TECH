@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Wiew/buluslar.dart';
 
 class Biliminsani extends StatelessWidget {
-  const Biliminsani({super.key});
+  final String title;
+  const Biliminsani({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {

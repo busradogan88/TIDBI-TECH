@@ -6,8 +6,7 @@ class Kayitsayfasi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return  Scaffold(
         appBar: AppBar(
           title: Center(
             child: Text(
@@ -181,7 +180,6 @@ class Kayitsayfasi extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
+      );
   }
 }

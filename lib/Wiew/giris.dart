@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Wiew/biliminsani.dart';
 import 'package:flutter_application_1/Wiew/kayitsayfasi.dart';
+import 'package:flutter_application_1/Wiew/oyun_bio_harita_sayfasi.dart';
 import 'package:flutter_application_1/Wiew/sifremiunuttum.dart';
 
 class Giris extends StatelessWidget {
@@ -8,8 +9,7 @@ class Giris extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return  Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
           title: const Center(
@@ -98,7 +98,7 @@ class Giris extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Biliminsani(title: "Bilim İnsanı"),
+                          builder: (context) => const OyunBioHaritaSayfasi(title: ""),
                         ),
                       );
                     },
@@ -163,7 +163,6 @@ class Giris extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
+      );
   }
 }

@@ -7,8 +7,7 @@ class Sifremiunuttum extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return  Scaffold(
         appBar: AppBar(
           title: Center(
             child: Text(
@@ -17,6 +16,7 @@ class Sifremiunuttum extends StatelessWidget {
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 24,
+                
               ),
             ),
           ),
@@ -66,7 +66,6 @@ class Sifremiunuttum extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
+      );
   }
 }

@@ -45,7 +45,7 @@ class Buluslar extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              // 2. Buton
+              
               SizedBox( height: 20,),
              Image.asset(
                 'assets/images/constellation.png',
@@ -75,7 +75,7 @@ class Buluslar extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              // 3. Buton
+              
               SizedBox( height: 20,),
              Image.asset(
                 'assets/images/clock.png',

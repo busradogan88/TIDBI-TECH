@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Wiew/oyun.dart';
+import 'package:flutter_application_1/Wiew/harita.dart';
+import 'package:flutter_application_1/Wiew/biliminsani.dart';
 
 class OyunBioHaritaSayfasi extends StatelessWidget {
   final String title;
@@ -8,63 +11,110 @@ class OyunBioHaritaSayfasi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-      ),
+      appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.all(25.0),
         child: Center(
           child: Column(
             children: [
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               Image.asset(
                 'assets/images/gamecontrol.png',
                 width: 150,
                 height: 150,
                 fit: BoxFit.cover,
-                
               ),
-               const Text(
-                " Oyunlar",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(height: 20),
+                TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Oyun(title:""),
+                        ),
+                      );
+                    },
+                    child: const Text(
+                      "Oyun",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+              const SizedBox(height: 15),
               Text(
                 title,
-                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
-               const SizedBox(height: 20),
+              const SizedBox(height: 15),
               Image.asset(
                 'assets/images/global.png',
                 width: 150,
                 height: 150,
                 fit: BoxFit.cover,
-                
               ),
-               const Text(
-                " Harita",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(height: 20),
+                TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Harita(title:""),
+                        ),
+                      );
+                    },
+                    child: const Text(
+                      "Harita",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+              const SizedBox(height: 15),
               Text(
                 title,
-                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               Image.asset(
                 'assets/images/research.png',
                 width: 150,
                 height: 150,
                 fit: BoxFit.cover,
-                
               ),
-               const Text(
-                " Biyografi",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(height: 20),
+                TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Biliminsani(title:""),
+                        ),
+                      );
+                    },
+                    child: const Text(
+                      "Biyografi",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+              const SizedBox(height: 15),
               Text(
                 title,
-                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ],
           ),

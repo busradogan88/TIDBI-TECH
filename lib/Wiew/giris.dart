@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Wiew/biliminsani.dart';
 import 'package:flutter_application_1/Wiew/kayitsayfasi.dart';
 import 'package:flutter_application_1/Wiew/oyun_bio_harita_sayfasi.dart';
 import 'package:flutter_application_1/Wiew/sifremiunuttum.dart';
@@ -98,7 +97,7 @@ class Giris extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const OyunBioHaritaSayfasi(title: ""),
+                          builder: (context) => const OyunBioHaritaSayfasi(title:""),
                         ),
                       );
                     },

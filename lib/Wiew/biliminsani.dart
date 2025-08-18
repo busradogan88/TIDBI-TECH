@@ -7,8 +7,7 @@ class Biliminsani extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
           title: const Center(
@@ -114,7 +113,6 @@ class Biliminsani extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 }
